@@ -1,0 +1,202 @@
+<html>
+   <div class="fade-overlay" *ngIf="showOverlay"></div>
+
+<div *ngIf="!showBlankScreen" class="video-container">
+  <video #video autoplay muted playsinline>
+    <source src="assets/videos/animation.mp4" type="video/mp4" />
+  </video>
+</div>
+  <nav class="navbar" [class.show]>
+    <div class="navbar-container container">
+      <input type="checkbox">
+      <div class="hamburger-lines">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </div>
+      <ul class="menu-items">
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#about">Qui Sommes Nous ?</a></li>
+        <li><a href="#mb">Limousine</a></li>
+        <li><a href="#historique">Berline</a></li>
+      </ul>
+      <div class="logo">
+        <img src="https://i.postimg.cc/9FX4jCyt/20502739-maybach-marque-logo-voiture-symbole-avec-nom-blanc-conception-allemand-voiture-vecteur-illu.png" alt="car" />
+      </div>
+    </div>
+  </nav>
+<body class="bar-container " [class.show]="!showOverlay">
+    <section class="showcase-area" id="showcase">
+      <div class="showcase-container">
+        <a href="https://www.mercedes-benz.fr/passengercars/models/saloon/mercedes-maybach-s-class/overview.html?srsltid=AfmBOopm2uvJViDZ51xVp1n36S9z5SaNcvc-kuo38zfc0e1KLkv42QSb" class="btn btn-primary">
+          Redirect
+        </a>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="about-wrapper container">
+        <div class="about-text">
+          <p class="small">Maybach</p>
+          <h2 class="display-4">Qui sommes-nous ?</h2>
+          <p>
+            Nous sommes Maybach, une marque née en 1909, 
+            fondée par Wilhelm Maybach, pionnier de l’automobile 
+            de luxe. Dès nos débuts, nous avons marqué l’histoire en 
+            créant des moteurs puissants et élégants, destinés aux 
+            voitures les plus prestigieuses. Après une pause, nous 
+            sommes revenus en 2002 pour redéfinir le luxe moderne 
+            avec des modèles exclusifs, mêlant tradition et 
+            innovation. Chaque étape de notre histoire témoigne de 
+            notre engagement à offrir un confort inégalé et une 
+            performance exceptionnelle, pour ceux qui exigent 
+            l’excellence.
+          </p>
+        </div>
+        <div class="about-img">
+          <img src="https://i.postimg.cc/59r4KZWV/MAYBACH.jpg" alt="mb" />
+        </div>
+      </div>
+    </section>
+    <section id="mb">
+      <h3 class="text-center display-4">Limousine</h3>
+      <div class="mb-container container">
+        <div class="mb-type fruite">
+          <div class="img-container">
+            <img src="https://i.postimg.cc/zBhnqbLd/2008-maybach-62-s.jpg" alt="error" />
+            <div class="img-content">
+              <h3>Maybach 62S</h3>
+              <a
+                href="https://fr.wikipedia.org/wiki/Maybach_57_et_62"
+                class="btn"
+                target="blank"
+                >Description</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="mb-type vegetable">
+          <div class="img-container">
+            <img src="https://i.postimg.cc/6qXc4Ln2/1.jpg" alt="error" />
+            <div class="img-content">
+              <h3>Maybach S 650 Pullman</h3>
+              <a
+                href="https://fr.wikipedia.org/wiki/Mercedes-Benz_Classe_S_(Type_222)"
+                class="btn"
+                target="blank"
+                >Description</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="mb-type grin">
+          <div class="img-container">
+            <img src="https://i.postimg.cc/2jJYB1Kk/Mercedes-Maybach3.jpg" alt="error" />
+            <div class="img-content">
+              <h3>Maybach S 680</h3>
+              <a
+                href="https://fr.wikipedia.org/wiki/Mercedes-Benz_Classe_S_(Type_223)"
+                class="btn"
+                target="blank"
+                >Description</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="historique">
+      <h3 class="historique-heading">Historique</h3>
+      <div class="historique-container container">
+        <div class="historique-item">
+          <div class="mb-img">
+            <img src="https://i.postimg.cc/KcpbTr3L/download.jpg" alt="" />
+          </div>
+          <div class="mb-description">
+            <h2 class="mb-title">1909</h2>
+            <p class>
+              Wilhelm Maybach, en collaboration avec son fils Karl Maybach, fonde l'entreprise Maybach-Motorenbau, initialement pour produire des moteurs pour dirigeables Zeppelin.
+            </p>
+          </div>
+        </div>
+
+        <div class="historique-item">
+          <div class="mb-img">
+            <img
+              src="https://i.postimg.cc/Fz4LV5BW/MAYBACHTyp-W322-70-HP-Closed-Body-2702-6.jpg"
+              alt="error"
+            />
+          </div>
+          <div class="mb-description">
+            <h2 class="mb-title">1921</h2>
+            <p>
+              Maybach présente sa première voiture de luxe, la Maybach W3, au Salon de l'automobile de Berlin. C’est une des premières voitures allemandes à transmission entièrement automatique.
+            </p>
+          </div>
+        </div>
+        <div class="historique-item">
+          <div class="mb-img">
+            <img src="https://i.postimg.cc/VkddMkNs/1591209455-vpk-name1.jpg" alt="error" />
+          </div>
+          <div class="mb-description">
+            <h2 class="mb-title">1940s</h2>
+            <p>
+              Pendant la Seconde Guerre mondiale, Maybach cesse la production de voitures et se concentre sur les moteurs pour chars (comme ceux du Panzer).
+            </p>
+          </div>
+        </div>
+        <div class="historique-item">
+          <div class="mb-img">
+            <img src="https://i.postimg.cc/s2JdgpRM/Maybach-Symbole.jpg" alt="" />
+          </div>
+          <div class="mb-description">
+            <h2 class="mb-title">1960</h2>
+            <p>
+              Maybach est rachetée par Daimler-Benz (aujourd'hui Mercedes-Benz Group), mettant fin à son indépendance en tant que constructeur.
+            </p>
+          </div>
+        </div>
+        <div class="historique-item">
+          <div class="mb-img">
+            <img src="https://i.postimg.cc/gJffM4VB/S8-modele-maybach-62-berline.jpg" alt="" />
+          </div>
+          <div class="mb-description">
+            <h2 class="mb-title">2002</h2>
+            <p>
+              Mercedes relance la marque avec les modèles Maybach 57 et Maybach 62, des berlines de très grand luxe destinées à concurrencer Rolls-Royce et Bentley.
+            </p>
+          </div>
+        </div>
+        <div class="historique-item">
+          <div class="mb-img">
+            <img src="https://i.postimg.cc/Hkh34n46/Mercedes-Maybach-Classe-S-2018-d24dc.jpg" alt="" />
+          </div>
+          <div class="mb-description">
+            <h2 class="mb-title">2015</h2>
+            <p>
+              La marque est repositionnée comme une sous-marque ultra-luxe de Mercedes-Benz, avec le lancement de la Mercedes-Maybach Classe S, alliant raffinement extrême et technologie de pointe.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="contact-container container">
+        <div class="form-container">
+          <h2 class="display-4">Partagez Votre Experience</h2>
+          <input type="text" placeholder="Nom" />
+          <input type="email" placeholder="E-Mail" />
+          <textarea
+            cols="30"
+            rows="6"
+            placeholder="Message"
+          ></textarea>
+          <a href="#" class="btn">Envoyer</a>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <h2> © 2025 Maybach Tous droits réservés </h2>
+    </footer>
+  </body>
+</html>

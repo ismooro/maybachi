@@ -1,0 +1,29 @@
+:host {
+  cursor: none; /* cache le curseur natif */
+}
+
+#cursor-aura {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255); /* rouge par défaut */
+  filter: blur(8px);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9998;
+  transition: background 0.3s ease; /* transition douce */
+}
+
+/* Curseur principal */
+#custom-cursor {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
